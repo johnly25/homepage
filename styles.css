@@ -1,0 +1,164 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper, .footer-wrapper {
+    padding: 100px;  
+}
+
+.triangle-topleft {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 40%,0 80%);
+    z-index: -1;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.about-me-image img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-content {
+    padding: 40px;
+    box-shadow: 0 5px 10px black;
+    background: white;
+}
+
+.about-me-image {
+    position: relative;
+}
+
+.name {
+    color: white;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 85%;
+    width: 100%;
+    font-size: 36px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding-bottom: 5rem;
+}
+
+.card-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+header {
+    padding-bottom: 10rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.icons i {
+    font-size: 2rem;
+}
+
+.title-and-icons .icons i{
+    font-size: 1.5rem;
+}
+
+footer .icons {
+    justify-content: flex-start;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+picture {
+    display: flex;
+    justify-content: end;
+}
+
+.title-and-icons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.footer-wrapper {
+     background: black;
+     color:white;
+}
+
+
+@media (min-width:500px) and (max-width: 1200px) {
+    .about-me-container {
+        display: block;
+    }
+
+    .about-me-content {
+        min-width: 400px;
+    }
+
+    .about-me-image {
+        position: relative;
+        bottom: 50px;
+        left: -50px;
+        margin-bottom: -50px;
+        margin-right: -50px;
+        float: left;
+        padding-right: 15px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        gap: 5%;
+    }
+    
+
+}
+
+@media (max-width:500px) {
+    .about-me-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about-me-content {
+        min-width: 300px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}

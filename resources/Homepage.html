@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Homepage</title>
+<link rel="stylesheet" href="Homepage_files/styles.css"></head>
+
+<body>
+    <header>
+        <div class="about-me-container">
+            <div class="about-me-image">
+                <img src="Homepage_files/FiX0m0oUUAAAu8q.jpg" alt="profile picture">
+            </div>
+            <div class="about-me-content">
+                <h1>About me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat culpa praesentium sed sint. Non
+                    minus illum vel natus ipsa necessitatibus est voluptatibus nesciunt odio iusto animi delectus, quia
+                    maxime?
+                    Ratione aspernatur voluptatem odit nobis maiores quidem, illo neque consequatur dolores vero
+                    doloremque, debitis necessitatibus commodi velit minima non tempore et. Perferendis porro reiciendis
+                    molestiae hic facilis iusto dolore aspernatur!</p>
+                <div class="icons"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer></footer>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+
+
+</body></html>
